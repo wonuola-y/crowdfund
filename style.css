@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+}
+/* section, div{
+    border: 2px solid cyan;
+
+} */
+body{
+    margin: 0;
+}
+.pre-first{
+    background-image: url(./images/image-hero-mobile.jpg);
+    background-size: cover;
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+    height: 30vh;
+    margin: 0;
+    
+}
+.mobile-nav > ul{
+    display: none;
+}
+.mobile-nav{
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-two{
+    position: relative;
+    top: -45px;
+    width: 25%;
+}
+.first-one{
+    width: 85%;
+    position: relative;
+    top: -15px;
+    border: 0.1px solid rgba(218, 215, 215, 0.815);
+    background-color: white;
+    border-top-left-radius: .75em;
+    border-top-right-radius: .75em;
+    padding: 2em;
+
+}
+.first{
+    position: relative;
+    text-align: center;
+    top: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.first > .first-one > h1{
+    margin-top: -30px;
+ 
+}
+button{
+    padding: .5em;
+    border-radius: 2em;
+    border: none;
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+   
+}
+.book{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.project{
+    width: 68%;
+    margin: 0;
+}
+.bookmark{
+    width: 15%;
+    height: 15%;
+}
+.second{
+    height: 36vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+i{
+    font-style: normal;
+}
+span{
+    position: relative;
+    top: -10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.range{
+ 
+    display: flex;
+    flex-direction: column;
+}
+.normal{
+    border-radius: 1em;
+    position: absolute;
+    height: 4vw;
+    width: 80%;
+  margin-left: 2em;
+background-color: rgba(214, 214, 214, 0.5);
+    justify-content: center;
+ 
+}
+.cyaned{
+    border-radius: 1em;
+
+    position: absolute;
+    height: 4vw;
+    width: 57%;
+    background-color: hsl(176, 72%, 28%);
+    margin-left: 2em;
+}
+
+hr{
+    width: 30%;
+}
+.third{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em;
+}
+.third-part{
+    padding: 2em 1.5em;
+    border: 0.1px solid rgba(218, 215, 215, 0.815);
+    border-radius: .5em;
+}
+.fourth, .fifth{
+    border: .1px solid gray;
+    padding: 1em;
+    border-radius: .75em;
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+div > button{
+    width: 40%;
+    margin-top: 1.5em;
+    padding: 1em;
+}
+.sixth{
+    border: none;
+}
+.sixth > div{
+    border-radius: .75em;
+    border: .1px solid gray;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.left > span{
+top: 0;
+}
+.pledge{
+    color: hsl(176, 50%, 47%);
+}
+.modal{
+    display: none;
+}
+.modal-thanks{
+    display: none;
+}
+.overlay{
+    display: ;
+}

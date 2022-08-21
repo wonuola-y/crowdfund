@@ -128,11 +128,7 @@ position: relative;
     align-items: center;
     padding: 2em 1em;
 }
-.behind{
-    z-index: -1;
-    
 
-}
 .third-part{
     padding: 2em 1.5em;
     border: 0.1px solid rgba(218, 215, 215, 0.815);
@@ -163,45 +159,107 @@ div > button{
 }
 .left > span{
 top: 0;
+font-size: 18px;
+font-weight: 800;
 }
 .pledge{
     color: hsl(176, 50%, 47%);
 }
-.modal{
-    /* flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    height: 90vh;
-    background-color: white;
-    position: absolute;
-    top: 10%;
-    z-index: 1;
-    border: 2px solid green; */
-
-    /* margin: 1em; */
+.modal-container{
     display: none;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 80vw;
-     border: 2px solid red;
-     border-radius: 10px;
+    width: 100%;
 
+}
+.modal{
+width: 80%;
+/* border: 2px solid red; */
+     border-radius: 10px;
     position: absolute;
     top: 20%;
     background-color: white;
     z-index: 1;
+    border: 2px solid gray;
 
+}
+.modal > h3, .modal > p{
+    text-align: left;
+    margin: 1em;
+}
+.modal > div > p, .modal > div > h5, .m{
+   padding: 1em; 
+}
+h5{
+        margin: 1em;
 }
 .modal-thanks, .modal-pledge{
     display: none;
+}
+.modal > div > p, .modal > p{
+    color: gray;
+    margin: 0;
+
+}
+.modal > p{
+    margin: 15px;
+    line-height:25px;
+
+}
+h3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.head{
+font-weight: 800;
 }
 /* .overlay{
     display: ;
 } */
 .modal-show{
     display: flex;
+}
+
+.modal > div{
+    text-align: left;
+    padding: 1em;
+    border: solid rgb(93, 94, 93) .5px;
+    border-radius: .25em;
+    margin-bottom: 1em;
+
+}
+/* radio button styling*/
+
+/* Step 1: Removing the default style */
+.radio{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    user-select: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+.radio input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.radio 
+/* Step 2: Create a span that has a class and style it  */
+.radio-button{
+position: absolute;
+top: 0;
+left: -8px;
+height: 25px;
+width: 25px;
+border: .5px solid gray;
+background-color: white;
+border-radius: 50%;
+}
+.tag{
+    margin-left: 1.8em;
 }

@@ -108,7 +108,6 @@ background-color: rgba(214, 214, 214, 0.5);
 }
 .cyaned{
     border-radius: 1em;
-
     position: absolute;
     height: 4vw;
     width: 57%;
@@ -208,10 +207,13 @@ h5{
     line-height:25px;
 
 }
-h3{
+.modal > h3{
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+}
+.modal-border{
+    border: 2px solid darkcyan;
 }
 .head{
 font-weight: 800;
@@ -226,7 +228,6 @@ font-weight: 800;
 .modal > div{
     text-align: left;
     padding: 1em;
-    border: solid rgb(93, 94, 93) .5px;
     border-radius: .25em;
     margin-bottom: 1em;
 
@@ -248,7 +249,7 @@ font-weight: 800;
     opacity: 0;
     cursor: pointer;
 }
-.radio 
+
 /* Step 2: Create a span that has a class and style it  */
 .radio-button{
 position: absolute;
@@ -256,10 +257,56 @@ top: 0;
 left: -8px;
 height: 25px;
 width: 25px;
+outline: .5px solid red;
 border: .5px solid gray;
 background-color: white;
 border-radius: 50%;
 }
+
 .tag{
     margin-left: 1.8em;
 }
+/* to get the lightgray hover effect on the radio button  */
+.radio:hover input ~ .radio-button{
+background-color: rgb(231, 229, 229);
+}
+/* When the radio button is checked, add a light gray background */
+.radio input:checked ~ .radio-button{
+        background-color: rgb(252, 249, 249);
+  }
+
+  .radio-button:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+/* to give the cyan green effect whenn the button is checked*/
+  .radio input:checked ~ .radio-button:after {
+    display: block;
+        background: hsl(176, 50%, 47%);
+  
+  }
+  
+  .radio .radio-button:after {
+    top: 6px;
+   left: 6.5px;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background: cyan;
+}
+
+.overlay {
+    position: absolute;
+    /* display: none; */
+    scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0,0,0,0.5); */
+    z-index: 2;
+    cursor: pointer;
+  }

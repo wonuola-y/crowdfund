@@ -7,21 +7,26 @@ const cancel = document.querySelector('.cancel')
 
 const main = document.querySelector('main')
 const overlay = document.querySelector('.overlay')
-const radio = document.querySelectorAll('.radio-button')
+const radioField = document.querySelectorAll('.radio-field')
+
 
 console.log(modalDiv);
 console.log(modal);
 console.log(btn);
 
+console.log(radioField);
+
 
 // modal class
 for (let b = 0; b < radio.length; b++) {
-    radio[b].addEventListener('click', ()=>{
+    radioField[b].addEventListener('click', ()=>{
         console.log(modalDiv);
+        let current = document.getElementsByClassName("active");
 
-       if (modalDiv[b].checked = true) {
-        console.log('init');
-       }
+  current[0].className = current[0].className.replace("active", "")
+  this.className += "active";
+       
+       
 });
         }
    

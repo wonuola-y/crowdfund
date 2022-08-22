@@ -212,7 +212,7 @@ h5{
     justify-content: space-between;
     flex-direction: row-reverse;
 }
-.modal-border{
+.active{
     border: 2px solid darkcyan;
 }
 .head{
@@ -238,7 +238,7 @@ input[type = 'radio']{
     -webkit-appearance: none;
     width: 20px;
     height: 20px;
-    border: 1px solid gray;
+    border: .5px solid darkcyan;
     border-radius: 50%;
     
     outline: none;
@@ -254,8 +254,16 @@ input[type='radio']:before {
     border-radius:50%;    
   }
   input[type='radio']:checked:before {
-    background:green;}
-.overlay {
+    background:darkcyan;
+  }
+  
+  input[type='radio']:checked:before .modal-div {
+  border: .5px solid darkcyan;
+
+  }
+  
+  
+  .overlay {
     position: absolute;
     /* display: none; */
     scroll-behavior: smooth;

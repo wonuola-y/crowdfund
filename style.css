@@ -69,8 +69,13 @@ button{
 
 }
 .project{
-    width: 68%;
+    width: 150px;
     margin: 0;
+}
+.project:hover{
+    background-color: hsl(176, 72%, 28%);
+    cursor: pointer;
+        
 }
 .bookmark{
     width: 15%;
@@ -265,7 +270,7 @@ input[type='radio']:before {
   
   .overlay {
     position: absolute;
-    /* display: none; */
+    display: none;
     scroll-behavior: smooth;
     width: 100vw;
     height: 100vh;

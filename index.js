@@ -1,3 +1,8 @@
+// GOD HELP ME
+const hamburger = document.querySelector('.hamburg')
+const menu = document.querySelector('.menu-list')
+const menuCancel = document.querySelector('.cancel-menu')
+
 const btn = document.querySelectorAll('.reward-btn')
 
 const modal = document.querySelector('.modal-container')
@@ -7,41 +12,39 @@ const cancel = document.querySelector('.cancel')
 
 const main = document.querySelector('main')
 const overlay = document.querySelector('.overlay')
-const radioField = document.querySelectorAll('.radio-field')
+const radio = document.querySelectorAll('.radio-field')
+const selected = document.querySelectorAll('.modalinput[type="radio"]:checked')
 
 const btnBacked = document.querySelector('.project')
 const valued = document.querySelector('.funds')
 const numberBacked = document.querySelector('.number')
 
-console.log(modalDiv);
-console.log(modal);
-console.log(btn);
-
-console.log(radioField);
+const pledge = document.querySelectorAll('.modal-pledge')
+console.log(pledge);
 
 
-// modal class border
-for (let b = 0; b < radio.length; b++) {
-    radioField[b].addEventListener('click', ()=>{
-        console.log(modalDiv);
-        let current = document.getElementsByClassName("active");
 
-  current[0].className = current[0].className.replace("active", "")
-  this.className += "active";
-       
-       
-});
-        }
+// menu for mobile
+hamburger.addEventListener('click',()=>{
+menu.style.display = 'block';
+hamburger.style.display = 'none';
+menuCancel.style.display = 'block';
 
+})
+menuCancel.addEventListener('click',()=>{
+    menu.style.display = 'none';
+    hamburger.style.display = 'block';
+menuCancel.style.display = 'none';
+})
 
-   //  modal class display
+//  modal class display
 for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener('click', ()=>{
   modal.classList.toggle('modal-show')
 
   window.scrollTo(100, 150)
    overlay.style.display = 'block';
-//   mainContent.classList.toggle('behind')
+
 
     // TO REMOVE THE MODAL CLASS
 cancel.addEventListener('click', ()=>{
@@ -50,27 +53,23 @@ cancel.addEventListener('click', ()=>{
 
 })
     })
-    
-}
-for (let d = 0; d < modalDiv.length; d++) {
-    modalDiv[d].addEventListener('click',()=>{
-       modalDiv[d].style.border = "2px solid red"
-    })
-    
-}
-// let answer = 0;
-// updateDisplay();
 
-// // increament back up project button
-// btnBacked.addEventListener('click', ()=>{
-//     console.log('gooo');
-//     answer++;
-//     updateDisplay();
-      
-// })
-// function updateDisplay() {
-//     value.innerHTML = answer;
-// }
+    //pledge display
+for (let n = 0; n < radio.length; n++) {
+  
+    radio[n].addEventListener('click', ()=>{
+        console.log(pledge); 
+        console.log(radio);
+        pledge[n].style.color ='red';
+    
+    })
+}
+
+
+    
+};
+
+// bookmarked
 
 let result = 914;
 let numbers = 10;
@@ -82,9 +81,9 @@ btnBacked.addEventListener('click',()=>{
     result+=2;
     numbers++;
     showResult();
-})
+});
 function showResult() {
     valued.innerHTML = result;
     numberBacked.innerHTML =numbers;
 
-}
+};

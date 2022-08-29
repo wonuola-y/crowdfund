@@ -1,10 +1,8 @@
+/* GOD HELP ME */
 *{
     box-sizing: border-box;
 }
-/* section, div{
-    border: 2px solid cyan;
 
-} */
 body{
     margin: 0;
 }
@@ -19,6 +17,19 @@ body{
 }
 .mobile-nav > ul{
     display: none;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 80%;
+    list-style: none;
+    position: absolute;
+    top: 5%;
+    padding: 0;
+   text-align: left;
+z-index: 1;
+}
+.mobile-nav > ul > li{
+    padding: 1em;
 }
 .mobile-nav{
     padding: 1.5em;
@@ -121,7 +132,8 @@ background-color: rgba(214, 214, 214, 0.5);
 }
 
 hr{
-    width: 30%;
+    width: 100%;
+  color: lightgray;
 }
 .third{
 position: relative;
@@ -169,6 +181,10 @@ font-weight: 800;
 .pledge{
     color: hsl(176, 50%, 47%);
 }
+.result{
+    display: block;
+    background-color: gray;
+}
 .modal-container{
     display: none;
     flex-direction: column;
@@ -196,6 +212,10 @@ width: 80%;
 .modal > div > p, .modal > div > h5, .m{
    padding: 1em; 
 }
+.modal-div:hover{
+border: .5px solid darkcyan;
+}
+
 h5{
         margin: 1em;
 }

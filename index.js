@@ -3,6 +3,7 @@ const hamburger = document.querySelector('.hamburg')
 const menu = document.querySelector('.menu-list')
 const menuCancel = document.querySelector('.cancel-menu')
 
+const bookmarked = document.querySelector('.bookmark')
 const btn = document.querySelectorAll('.reward-btn')
 
 const modal = document.querySelector('.modal-container')
@@ -69,7 +70,7 @@ for (let n = 0; n < radio.length; n++) {
     
 };
 
-// bookmarked
+// backed
 
 let result = 914;
 let numbers = 10;
@@ -87,3 +88,10 @@ function showResult() {
     numberBacked.innerHTML =numbers;
 
 };
+//bookmarked
+bookmarked.addEventListener('click',()=>{
+    bookmarked.innerHTML = 'bookmarked!';
+    bookmarked.classList.toggle('border-bk')
+
+    console.log('hi');
+})

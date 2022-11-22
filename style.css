@@ -237,6 +237,12 @@ div > button {
   padding: 1em;
   margin: 0;
 }
+p{
+  color: hsl(0, 0%, 48%)
+}
+.second > div > p{
+  color:black ;
+}
 .modal > h3,
 .modal > p {
   text-align: left;

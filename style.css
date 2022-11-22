@@ -180,7 +180,7 @@ hr {
 }
 .fourth,
 .fifth {
-  border: 0.1px solid gray;
+  border: 0.1px solid rgb(219, 218, 218);
   padding: 1em;
   border-radius: 0.75em;
   margin-bottom: 1.5em;
